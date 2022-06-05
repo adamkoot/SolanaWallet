@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
+import {color} from 'react-native-reanimated';
 
 export default class Screen2 extends Component {
   constructor(props) {
@@ -9,9 +10,18 @@ export default class Screen2 extends Component {
 
   render() {
     return (
-      <View>
-        <Text> Screen2 </Text>
+      <View style={styles.main}>
+        <Text> Have a good day !!!! </Text>
+        <Text> Adam Kot </Text>
+        <Text style={{color: 'pink'}}> https://github.com/adamkoot </Text>
       </View>
     );
   }
 }
+const styles = StyleSheet.create({
+  main: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
